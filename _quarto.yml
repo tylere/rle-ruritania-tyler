@@ -1,0 +1,36 @@
+project:
+  type: book
+
+book:
+  title: "Threatened ecosystems of Ruritania"
+  subtitle: An IUCN Red List of Ecosystems Assessment
+  date: "1234-12-31"
+  chapters:
+    - index.qmd
+    - content/0.1_foreword.qmd
+    - content/0.2_preface.qmd
+    - content/0.3_acknowledgments.qmd
+    - content/0.4_coordinating_orgs.qmd
+    - content/0.5_summary.qmd
+    - content/1.0_introduction.qmd
+    - content/2_ecosystem_overview.qmd
+    - references.qmd
+
+bibliography: 
+  - references_iucn.bib
+  - references_country_specific.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+show-instructions: true
+tbl-cap-location: top
+
+# Content Constants
+country-name: Ruritania
+country-code: XX  # https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+version: 0.1
+year: 1234
